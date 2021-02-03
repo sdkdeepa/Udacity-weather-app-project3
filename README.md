@@ -9,3 +9,12 @@ This will require modifying the `server.js` file and the `website/app.js` file. 
 
 ## Extras
 If you are interested in testing your code as you go, you can use `tests.js` as a template for writing and running some basic tests for your code.
+
+
+## Steps to get started
+From the root directory, initialize node and add the packages by running the following command
+
+`npm init` 
+`npm i express cors body-parser`
+
+
