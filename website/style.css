@@ -1,88 +1,73 @@
 body{
-    background: #fffff8;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    margin: 0;
+    font-family: 'Merriweather', serif,sans-serif;
 }
 
 #app{
     display: grid;
-    grid-auto-rows: minmax(150px, auto);
+    grid-auto-rows: minmax(100px, auto);
     /* grid-template-columns:  */
     height:100vh;
-    background: white;
-    color: #f0d43a;
+    background: rgb(78, 245, 247);
+    color:#1790db;
     justify-content: center;
-    grid-gap: 1em;
+    grid-gap: .5em;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
-}
-
-.holder{
-
-}
-
-.entry{
-    background: rgba(59, 74, 107, .4);
-}
-
-#entryHolder{
-
-}
-
-#date{
-
-}
-
-#temp{
-
-}
-
-#content{
-
-}
-
-.headline {
-
-}
-.title{
-
+    font-family: 'Merriweather', serif;
 }
 
 /*  Basic Styling To Override Default For Basic HTML Elements */
 label{
     display:block;
-    font-size: 27px;
+    font-size: 15px;
+    box-sizing: border-box;
+    border-radius: 4px; 
 }
 
 input{
-    display:block;
+    display: inline-block;
     height: 60px;
-    width: 320px;
-    background:#22b2da;
-    color: #f0d43a;
+    width: 150px;
+    background:white;
+    color: black;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', serif;
     border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 
 button{
-    width: 400px;
-    height: 100px;
-    background: #3b4a6b;
-    color: #f0d43a;
+    width: 5opx;
+    height: 50px;
+    background:white;
+    color: green;
     font-size: 26px;
-    font-family: 'Oswald', sans-serif;
-    border: none;
+    font-family: 'Merriweather', serif;
+    border-radius: 8px;
     box-shadow: 2px 4px 5px #444;
+   
 }
 h1{
-    font-size: 36px;
+    font-size:40px;
 }
 
-textarea{
-    background:#22b2da;
-    color: #f0d43a;
+h2{
+    font-size: medium;
+}
+
+textarea {
+
+    font-family: 'Merriweather', serif;
+}
+.myinput{
+    background:white;
+    color: black;
     font-size: 20px;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Merriweather', serif;
+    border: none;
+    box-sizing: border-box;
+    border-radius: 4px;
 }
 /* Reset style for HTML element on active to have no border*/
 input:focus,
@@ -93,19 +78,21 @@ button:focus {
 }
 /* Style for Placeholder Text*/
 ::placeholder { /* Firefox, Chrome, Opera */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+    color: #a4a4a4; 
+    font-family: 'Merriweather', serif;
+    font-size: small;
+    text-align: center;
 
 } 
   
 :-ms-input-placeholder { /* Internet Explorer 10-11 */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+    color: #a4a4a4; 
+    font-family: 'Merriweather', serif;
 
 } 
   
 ::-ms-input-placeholder { /* Microsoft Edge */ 
-    color: #f0d43a; 
-    font-family: 'Oswald', sans-serif;
+    color: #a4a4a4; 
+    font-family: 'Merriweather', serif;
 
 } 
