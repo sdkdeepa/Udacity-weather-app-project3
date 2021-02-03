@@ -1,6 +1,6 @@
 /* Global Variables */
-const openWeatherMapBaseURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const apiBaseURL = "http://localhost:2820/";
+const openWeatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
+const apiBaseURL = "http://localhost:8080/";
 // Personal API Key for OpenWeatherMap API
 const openWeatherMapAPIKey = "a2e800a5ddea9a9c5bbbb24c1fc8d955";
 
@@ -11,7 +11,7 @@ document.getElementById("generate").addEventListener("click", () => getDataFromO
 /* Function to GET Web API Data*/
 async function getDataFromOpenWeatherAPI(apiKey) {
     let zipCode = document.getElementById("zip").value;
-    fetch(openWeatherMapBaseURL + zipCode + ",us&appid=" + apiKey).then((response) => {
+    fetch(openWeatherURL + zipCode + ",us&appid=" + apiKey).then((response) => {
         return response.json();
     }).then((result) => {
         postProjectData(result.main.temp);
