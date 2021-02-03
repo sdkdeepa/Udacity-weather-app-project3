@@ -14,7 +14,15 @@ If you are interested in testing your code as you go, you can use `tests.js` as 
 ## Steps to get started
 From the root directory, initialize node and add the packages by running the following command
 
-`npm init` 
-`npm i express cors body-parser`
+- `npm init` 
 
+- `npm i express cors body-parser`
+
+To start the server locally run 
+
+- `node server.js`
+
+## Project Video
+
+https://youtu.be/P52YcxRALWY
 
