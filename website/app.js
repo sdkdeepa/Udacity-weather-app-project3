@@ -4,8 +4,9 @@ const apiBaseURL = "http://localhost:2820/";
 // Personal API Key for OpenWeatherMap API
 const openWeatherMapAPIKey = "a2e800a5ddea9a9c5bbbb24c1fc8d955";
 
-// Event listener to add function to existing HTML DOM element
+// Create an event listener for the element with the id: generate, with a callback function to execute when it is clicked.
 document.getElementById("generate").addEventListener("click", () => getDataFromOpenWeatherAPI(openWeatherMapAPIKey));
+
 
 /* Function to GET Web API Data*/
 async function getDataFromOpenWeatherAPI(apiKey) {
@@ -17,7 +18,7 @@ async function getDataFromOpenWeatherAPI(apiKey) {
     });
 }
 
-/* Function to GET Project Data */
+/* Asynchronus function for GET API call to GET Project Data */
 async function getProjectData() {
     fetch(apiBaseURL + 'projectData').then((response) => {
         return response.json();
@@ -30,11 +31,12 @@ async function getProjectData() {
     });
 }
 
-/* Function to POST Project data */
+/* Asynchronus function for POST API call to POST Project Data */
 async function postProjectData(temp) {
-    // Create a new date instance dynamically with JS
+
+    // Creating date instance using JS date function
     let d = new Date();
-    let newDate = d.getMonth()+'.'+ d.getDate()+'.'+ d.getFullYear();
+    let newDate = d.getMonth() + '.' + d.getDate() + '.' + d.getFullYear();
     let content = document.getElementById("feelings").value;
     let data = {
         date: newDate,
