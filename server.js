@@ -19,6 +19,7 @@ Cors for cross origin allowance */
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.use(cors());
+
 // Initialize the main project folder
 app.use(express.static("website"));
 
