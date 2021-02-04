@@ -19,11 +19,13 @@ To start the server locally run
 
 - `node server.js`
 
+## Project Video
+
+https://youtu.be/jb8Yw_JWUk8
+
 ## Screenshot of the app
 
 ![alt text](https://github.com/sdkdeepa/weather-app-project3/blob/main/MobileView.png)
 
-## Project Video
 
-https://youtu.be/jb8Yw_JWUk8
 
