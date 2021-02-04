@@ -27,5 +27,19 @@ https://youtu.be/jb8Yw_JWUk8
 
 ![alt text](https://github.com/sdkdeepa/weather-app-project3/blob/main/MobileView.png)
 
+## For future refractoring
 
+Use Axios instead of fetch. It's a promise-based HTTP client for the browser and node.js. It has a number of benefits over fetch.
+Here are some of them:
+
+- Make XMLHttpRequests from the browser
+- Make HTTP requests from node.js
+- Supports the Promise API
+- Intercept request and response
+- Transform request and response data
+- Cancel requests
+- Automatic transforms for JSON data
+- Client-side support for protecting against XSRF
+- Refer https://github.com/axios/axios for more on Axios.
+https://blog.logrocket.com/axios-or-fetch-api/
 
