@@ -2,7 +2,7 @@
 const openWeatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
 const apiBaseURL = "http://localhost:8080/";
 // Personal API Key for OpenWeatherMap API
-const openWeatherMapAPIKey = "a2e800a5ddea9a9c5bbbb24c1fc8d955&units=metric";
+const openWeatherMapAPIKey = "a2e800a5ddea9a9c5bbbb24c1fc8d955&units=imperial";
 
 // Create an event listener for the element with the id: generate, with a callback function to execute when it is clicked.
 document.getElementById("generate").addEventListener("click", () => getDataFromOpenWeatherAPI(openWeatherMapAPIKey));
