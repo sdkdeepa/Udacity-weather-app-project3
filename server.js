@@ -43,9 +43,9 @@ function callBack(req, res) {
 })
 }
 /* Spin up the server*/
-const port = 8080;
-const server = app.listen(port, listening);
+const PORT = process.env.PORT || 8080;
+const server = app.listen(PORT, listening);
  function listening(){
     console.log(server);
-    console.log(`running on localhost: ${port}`);
+    console.log(`running on localhost: ${PORT}`);
   };
