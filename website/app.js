@@ -1,6 +1,6 @@
 /* Global Variables */
 const openWeatherURL = "https://api.openweathermap.org/data/2.5/weather?zip=";
-const apiBaseURL = "http://localhost:8080/";
+const apiBaseURL = "https://deepa-basic-weather-app.herokuapp.com/";
 // Personal API Key for OpenWeatherMap API
 const openWeatherMapAPIKey = "e2ee7e64869c75e3f36fbabefe6442ae&units=imperial";
 
