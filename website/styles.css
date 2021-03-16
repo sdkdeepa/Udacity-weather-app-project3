@@ -10,7 +10,6 @@ html {
   background: url(images/weather-app.jpg) no-repeat center center fixed;
   background-size: cover;
   height: 100%;
-  overflow: hidden;
 }
 
 body {
@@ -152,7 +151,7 @@ footer {
 
 
 /* ---- Media Query ---- */
-@media (max-width: 768px) {
+@media (max-width: 1100px) {
     .app {
         max-width: 450px;
     }
