@@ -1,52 +1,38 @@
-
-// Setup empty JS object to act as endpoint for all routes
-projectData = {};
-
-// Express to run server and routes
-const express = require("express");
-
-// Start up an instance of app
+const express = require('express');
 const app = express();
 
-/* Dependencies */
-const bodyParser = require("body-parser");
-const cors = require("cors");
-
-/* Middleware*/
-/*Here we are configuring express to use body-parser as middle-ware.
-Cors for cross origin allowance */
-
+/* Middleware */
+const bodyParser = require('body-parser');
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Cors for cross origin allowance
+const cors = require('cors');
 app.use(cors());
 
-// Initialize the main project folder
-app.use(express.static("website"));
+// Initialise the main project folder
+app.use(express.static('website'));
 
-
+const projectData = [];
 
 // Initialize all route with a callback function
-app.get("/projectData", sendData);
+app.get('/all', getData);
 
 // GET API to get the project data
-function sendData(request, response) {
-  response.json(projectData);
-}
+function getData(req, res) {
+    res.send(projectData);
+    console.log(projectData);
+};
 
 // POST route with a callback function
-app.post("/projectData", callBack);
+app.post('/addEntry', (req, res) => {
+    const entry = req.body;
+    projectData.push(entry);
+    res.json(projectData);
+});
 
-function callBack(req, res) {
-  projectData = req.body;
-  res.json({
-    "success":true,
-})
-}
 /* Spin up the server*/
+// added process.env.port for deploying app in heroku
 
-const PORT = process.env.PORT || 8080;
-const server = app.listen(PORT, listening);
- function listening(){
-    console.log(server);
-    console.log(`running on localhost: ${PORT}`);
-  };
+const port = process.env.PORT || 8080;
+app.listen(port, () => console.log(`Weather app is runnning localhost: ${port}`));

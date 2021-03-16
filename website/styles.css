@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+  background: url(images/weather-app.jpg) no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+
+/* ---- Typography ---- */
+h1,
+h2 {
+    font-weight: 300;
+}
+
+h1 {
+    text-align: left;
+    color: rgb(7, 115, 247);
+}
+
+h2 {
+    font-size: 1.4rem;
+    margin-bottom: 1em;
+    text-align: left;
+    color:brown;
+}
+
+h3 {
+    font-size: 1.7rem;
+    color:brown;
+}
+
+
+.name,
+.current-weather {
+    text-transform: uppercase;
+}
+
+.name {
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+
+.temp {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+.current-date {
+    font-weight: 300;
+    font-size: .8rem;
+}
+
+
+/* ---- Layout ---- */
+.app {
+    width: 80%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+.journal-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5em;
+    margin: 3em 0;
+}
+
+.entry-input,
+.entry-output {
+    border: 1px solid ;
+    background: rgb(244, 158, 158);
+    border-radius: 8px;
+    padding: 1.5em;
+}
+
+/* Form */
+input,
+textarea {
+    display: block;
+    margin: 1em 0;
+    padding: 12px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 3px;
+    outline: none;
+    background: #FFF;
+}
+
+::placeholder {
+    font-size: .7rem;
+}
+
+.form-submit {
+    text-align: center;
+}
+
+/* Journal Entry */
+
+.date,
+.location,
+.weather {
+    text-align: center;
+    margin-bottom: .4em;
+}
+
+.weather-icon {
+    width: 50px;
+}
+
+.temp {
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    font-family: 'Handlee', cursive;
+    margin-top: 1em;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-decoration: coral;
+    width: 80%;
+    margin: 0 auto 25px;
+    color: rgb(84, 5, 93); 
+}
+
+/* ---- Utilities ---- */
+#generate {
+    padding: 10px 25px;
+    background: #FFF;
+    border: 1px solid ;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s all;
+}
+
+
+/* ---- Media Query ---- */
+@media (max-width: 768px) {
+    .app {
+        max-width: 450px;
+    }
+
+    .journal-container {
+        grid-template-columns: 1fr;
+        grid-gap: 4em;
+    }
+}
